@@ -1,0 +1,24 @@
+# vars.yml 
+---
+
+# PVE Template Provisioning Variables
+template_name:  Windows-test
+pve_storage_id: vm-store
+vm_cores: 2
+vm_sockets: 2
+vm_memory_mb: 4097
+vm_os_type: win10
+# vm_os_type must be valid value per https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines
+drive_size_gb: 50
+start_at_boot: no
+os_iso_location: local:iso/en_windows_10_business_editions_version_1809_updated_jan_2020_x64_dvd_09d06013.iso
+format: qcow2
+# qcow2 or raw if on lvm
+agent: enabled=0
+# Enable with: 'enabled=1,fstrim_cloned_disks=1,type=virtio'
+
+# Unattend.xml template variables:
+deploy_image: 'Windows test'
+vm_admin_pass: user1
+vm_time_zone: 'Eastern Standard Time'
+org_name: 'FireEye'
