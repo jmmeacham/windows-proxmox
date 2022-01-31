@@ -6,7 +6,7 @@ template_name:  Windows-test
 pve_storage_id: vm-store
 vm_cores: 2
 vm_sockets: 2
-vm_memory_mb: 4097
+vm_memory_mb: 4098
 vm_os_type: win10
 # vm_os_type must be valid value per https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines
 drive_size_gb: 50
@@ -21,4 +21,4 @@ agent: enabled=0
 deploy_image: 'Windows test'
 vm_admin_pass: user1
 vm_time_zone: 'Eastern Standard Time'
-org_name: 'FireEye'
+org_name: 'Test'
